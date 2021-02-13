@@ -29,12 +29,10 @@ class LinkedList:
   
   def stringify_list(self):
     str1 = ""
-    str1 += str(self.head_node.get_value())
-    str1 += "\n"
+    str1 += str(self.head_node.get_value()) + "\n"
     n = self.head_node
     while n.get_next_node() != None:
-      str1 += str(n.get_next_node().get_value())
-      str1 += "\n"
+      str1 += str(n.get_next_node().get_value()) + "\n"
       n = n.get_next_node()
     return str1
 
