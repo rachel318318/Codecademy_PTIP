@@ -1,3 +1,12 @@
+# Iterate through the list looking for the node that matches val1 to be swapped (node1), keeping track of the node’s previous node as you iterate (node1_prev)
+# Repeat step 1 looking for the node that matches val2 (giving you node2 and node2_prev)
+# If node1_prev is None, node1 was the head of the list, so set the list’s head to node2
+# Otherwise, set node1_prev‘s next node to node2
+# If node2_prev is None, set the list’s head to node1
+# Otherwise, set node2_prev‘s next node to node1
+# Set node1‘s next node to node2‘s next node
+# Set node2‘s next node to node1‘s next node
+
 import Node
 import LinkedList
 
